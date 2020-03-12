@@ -14,6 +14,7 @@ PFVALS=( 'received' 'delivered' 'forwarded' 'deferred' 'bounced' 'rejected' 'hel
 write_result () {
 
         echo "$2"
+        rm "${TEMPFILE}"
         exit $1
 
 }
